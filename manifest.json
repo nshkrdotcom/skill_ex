@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "generated_at": "TODO: set during sync",
+  "repositories": [
+    {
+      "name": "supertester",
+      "path": "../supertester",
+      "skills_dir": ".claude/skills"
+    }
+  ],
+  "skills": [],
+  "notes": "Populate the skills array with metadata records produced by sync_skills.exs (name, source_repo, checksum, packaged_at)."
+}

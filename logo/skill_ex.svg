@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <defs>
+    <!-- Synthwave gradient palette -->
+    <linearGradient id="neonPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff006e"/>
+      <stop offset="100%" stop-color="#ff1f8f"/>
+    </linearGradient>
+    <linearGradient id="neonBlue" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#2b2bff"/>
+    </linearGradient>
+    <linearGradient id="neonPurple" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#b100ff"/>
+      <stop offset="100%" stop-color="#6b00ff"/>
+    </linearGradient>
+
+    <!-- Intense neon glow effect -->
+    <filter id="neonGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Outer glow for geometric shapes -->
+    <filter id="outerGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark background hex -->
+  <path d="M120 12 L210 66 L210 174 L120 228 L30 174 L30 66 Z" fill="#0a0a14" stroke="#1a1a2e" stroke-width="4"/>
+
+  <!-- Retro-wave geometric grid lines (horizontal) -->
+  <line x1="30" y1="90" x2="210" y2="90" stroke="url(#neonPink)" stroke-width="1.5" opacity="0.6" filter="url(#neonGlow)"/>
+  <line x1="30" y1="110" x2="210" y2="110" stroke="url(#neonPink)" stroke-width="1.5" opacity="0.5" filter="url(#neonGlow)"/>
+  <line x1="30" y1="130" x2="210" y2="130" stroke="url(#neonBlue)" stroke-width="2" opacity="0.7" filter="url(#neonGlow)"/>
+  <line x1="30" y1="150" x2="210" y2="150" stroke="url(#neonBlue)" stroke-width="1.5" opacity="0.5" filter="url(#neonGlow)"/>
+
+  <!-- Angular geometric shapes - 80s style -->
+  <polygon points="120,50 140,70 120,90 100,70" fill="none" stroke="url(#neonPurple)" stroke-width="2.5" filter="url(#outerGlow)"/>
+  <polygon points="70,100 90,115 70,130 50,115" fill="none" stroke="url(#neonBlue)" stroke-width="2" filter="url(#neonGlow)" opacity="0.8"/>
+  <polygon points="170,100 190,115 170,130 150,115" fill="none" stroke="url(#neonPink)" stroke-width="2" filter="url(#neonGlow)" opacity="0.8"/>
+
+  <!-- Central futuristic emblem - inspired by OWSLA logo style -->
+  <circle cx="120" cy="120" r="35" fill="none" stroke="url(#neonPink)" stroke-width="3" filter="url(#outerGlow)"/>
+  <circle cx="120" cy="120" r="28" fill="none" stroke="url(#neonBlue)" stroke-width="2" filter="url(#neonGlow)"/>
+
+  <!-- Angular lightning/energy pattern in center -->
+  <path d="M120 95 L130 110 L115 115 L125 135 L110 120 L120 120 Z" fill="url(#neonPink)" filter="url(#outerGlow)" opacity="0.9"/>
+  <path d="M120 95 L110 110 L125 115 L115 135 L130 120 L120 120 Z" fill="url(#neonBlue)" filter="url(#outerGlow)" opacity="0.7"/>
+
+  <!-- Bottom geometric accent lines -->
+  <line x1="60" y1="165" x2="90" y2="180" stroke="url(#neonPurple)" stroke-width="2.5" filter="url(#neonGlow)" opacity="0.7"/>
+  <line x1="150" y1="180" x2="180" y2="165" stroke="url(#neonPurple)" stroke-width="2.5" filter="url(#neonGlow)" opacity="0.7"/>
+
+  <!-- Outer hex frame with neon effect -->
+  <path d="M120 32 L188 72 L188 168 L120 208 L52 168 L52 72 Z" fill="none" stroke="url(#neonPink)" stroke-width="3" filter="url(#outerGlow)"/>
+
+  <!-- Corner accent dots - retro digital feel -->
+  <circle cx="52" cy="72" r="3" fill="#00f5ff" filter="url(#neonGlow)"/>
+  <circle cx="188" cy="72" r="3" fill="#ff006e" filter="url(#neonGlow)"/>
+  <circle cx="188" cy="168" r="3" fill="#b100ff" filter="url(#neonGlow)"/>
+  <circle cx="52" cy="168" r="3" fill="#00f5ff" filter="url(#neonGlow)"/>
+</svg>
