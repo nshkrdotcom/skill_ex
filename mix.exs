@@ -57,6 +57,7 @@ defmodule SkillEx.MixProject do
       source_ref: "v#{@version}",
       source_url: @source_url,
       homepage_url: @source_url,
+      assets: %{"logo" => "logo"},
       logo: "logo/skill_ex.svg",
       extras: [
         "README.md",
